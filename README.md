@@ -1,4 +1,4 @@
-# Project Name
+# SupplyChain Management
 
 This project involves deploying smart contracts using Hardhat and running a local development server for the client application.
 
