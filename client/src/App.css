@@ -1,0 +1,95 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: dashed 3px lightyellow;
+  color: white;
+}
+
+.heading {
+  font-size: xx-large;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+  flex-grow: 1; 
+  text-align: center;
+}
+
+.connect-button {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 15px;
+}
+
+.buttons{
+  display: flex;
+  justify-content: space-evenly;
+  border: 2px dashed lightyellow; 
+  padding: 50px; 
+  margin: 20px;
+}
+
+button{
+  padding: 20px;
+  border-radius: 15px;
+  font-size: x-large;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+.add-product-button::before, .place-order-button::before, 
+.update-shipment-button::before{
+
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background-color: silver;
+  transform: scaleX(0);
+  transition: transform 300ms ease-in-out;
+  transform-origin: left;
+}
+
+
+.add-product-button:hover::before, 
+.place-order-button:hover::before, 
+.update-shipment-button:hover::before,
+.add-product-button:focus::before, 
+.place-order-button:focus::before, 
+.update-shipment-button:focus::before{
+  transform: scaleX(1);
+}
+
+.add-product-button:hover, 
+.place-order-button:hover, 
+.update-shipment-button:hover{
+  z-index: 1;
+  border-radius: 15px;
+}
+
+.table-container{
+  border: 2px dashed lightyellow;
+  padding: 20px;
+  margin: 20px;
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+th,tr{
+  border: 2px dashed  lightgreen;
+  padding: 10px;
+  text-align: left;
+  color: white;
+  
+}
+
+th{
+  font: bolder;
+}
